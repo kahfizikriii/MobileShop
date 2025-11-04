@@ -1,14 +1,14 @@
 import React from "react";
-import ProfilCard from "./src/components/ProfilCard";
-import LoginForm from "./src/components/LoginForm";
-import HeroSection from "./src/components/HeroSection";
+import SimpleButtons from "./src/components/SimpleButtons";
+import FeedbackButtons from "./src/components/FeedbackButtons";
+import AdvancedTouches from "./src/components/AdvancedTouches";
 
 export default function App(){
   return (
     <>
-    {/* <ProfilCard /> */}
-    {/* <LoginForm/> */}
-    <HeroSection/>
+    {/* <SimpleButtons/> */}
+    {/* <FeedbackButtons/> */}
+    <AdvancedTouches/>
     </>
   )
 }
