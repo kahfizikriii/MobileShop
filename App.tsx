@@ -1,14 +1,12 @@
 import React from "react";
-import SimpleButtons from "./src/components/SimpleButtons";
-import FeedbackButtons from "./src/components/FeedbackButtons";
-import AdvancedTouches from "./src/components/AdvancedTouches";
+import { SafeAreaView, StatusBar } from "react-native";
+import HomeScreen from "./src/screens/HomeScreen";
 
-export default function App(){
+export default function App() {
   return (
-    <>
-    {/* <SimpleButtons/> */}
-    {/* <FeedbackButtons/> */}
-    <AdvancedTouches/>
-    </>
-  )
+    <SafeAreaView style={{ flex: 1 }}>
+      <StatusBar barStyle="dark-content" />
+      <HomeScreen />
+    </SafeAreaView>
+  );
 }
