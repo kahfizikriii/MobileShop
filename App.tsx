@@ -1,12 +1,17 @@
-import React from "react";
-import { SafeAreaView, StatusBar } from "react-native";
-import HomeScreen from "./src/screens/HomeScreen";
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import AppNavigator from './src/navigation/AppNavigator';
+import { StatusBar } from 'react-native';
 
-export default function App() {
+const App = () => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <>
       <StatusBar barStyle="dark-content" />
-      <HomeScreen />
-    </SafeAreaView>
+      <NavigationContainer>
+        <AppNavigator />
+      </NavigationContainer>
+    </>
   );
-}
+};
+
+export default App;
