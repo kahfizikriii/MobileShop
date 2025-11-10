@@ -1,17 +1,13 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import AppNavigator from './src/navigation/AppNavigator';
-import { StatusBar } from 'react-native';
+import OnboardingStack from './src/navigation/OnboardingStack';
+import DrawerContent from './src/components/DrawerContent';
 
-const App = () => {
+export default function App() {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <NavigationContainer>
-        <AppNavigator />
-      </NavigationContainer>
-    </>
+    <NavigationContainer>
+      <OnboardingStack />
+    </NavigationContainer>
+    
   );
-};
-
-export default App;
+}

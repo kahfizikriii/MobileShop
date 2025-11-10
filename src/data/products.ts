@@ -1,72 +1,25 @@
-export default [
-  {
-    id: '1',
-    name: 'Wireless Headphones',
-    price: 250000,
-    image: 'https://picsum.photos/200/300?1',
-    description: 'Suara jernih dan bass yang mantap.',
-  },
-  {
-    id: '2',
-    name: 'Smart Watch',
-    price: 500000,
-    image: 'https://picsum.photos/200/300?2',
-    description: 'Pantau aktivitas harianmu dengan mudah.',
-  },
-  {
-    id: '3',
-    name: 'Gaming Mouse',
-    price: 150000,
-    image: 'https://picsum.photos/200/300?3',
-    description: 'Desain ergonomis dengan DPI tinggi.',
-  },
-  {
-    id: '4',
-    name: 'Mechanical Keyboard',
-    price: 350000,
-    image: 'https://picsum.photos/200/300?4',
-    description: 'Switch tactile yang nyaman digunakan.',
-  },
-  {
-    id: '5',
-    name: 'Bluetooth Speaker',
-    price: 200000,
-    image: 'https://picsum.photos/200/300?5',
-    description: 'Suara powerful dengan desain minimalis.',
-  },
-  {
-    id: '6',
-    name: 'Laptop Stand',
-    price: 100000,
-    image: 'https://picsum.photos/200/300?6',
-    description: 'Membantu postur tubuh tetap sehat.',
-  },
-  {
-    id: '7',
-    name: 'Webcam HD',
-    price: 300000,
-    image: 'https://picsum.photos/200/300?7',
-    description: 'Kualitas video jernih untuk meeting online.',
-  },
-  {
-    id: '8',
-    name: 'Power Bank 10000mAh',
-    price: 180000,
-    image: 'https://picsum.photos/200/300?8',
-    description: 'Isi daya kapanpun kamu butuh.',
-  },
-  {
-    id: '9',
-    name: 'Wireless Charger',
-    price: 220000,
-    image: 'https://picsum.photos/200/300?9',
-    description: 'Cepat dan praktis untuk smartphone kamu.',
-  },
-  {
-    id: '10',
-    name: 'Mini Tripod',
-    price: 90000,
-    image: 'https://picsum.photos/200/300?10',
-    description: 'Cocok untuk vlogging atau foto produk.',
-  },
+// src/data/products.ts
+export interface Product {
+  id: string;
+  name: string;
+  price: number;
+  description?: string;
+  image: string;
+  category: string;
+  discountPercent?: number;
+}
+
+export const products: Product[] = [
+  { id: '1', name: 'Wireless Headphones', price: 250000, image: 'https://picsum.photos/400/300?1', description: 'Suara jernih & nyaman', category: 'Populer', discountPercent: 10 },
+  { id: '2', name: 'Smart Watch', price: 500000, image: 'https://picsum.photos/400/300?2', description: 'Pantau aktivitas harianmu', category: 'Terbaru' },
+  { id: '3', name: 'Gaming Mouse', price: 150000, image: 'https://picsum.photos/400/300?3', description: 'Ergonomis & responsif', category: 'Elektronik', discountPercent: 15 },
+  { id: '4', name: 'Mechanical Keyboard', price: 350000, image: 'https://picsum.photos/400/300?4', description: 'Switch tactile yang nyaman digunakan', category: 'Elektronik' },
+  { id: '5', name: 'T-Shirt Premium', price: 90000, image: 'https://picsum.photos/400/300?5', description: 'Katun combed 30s', category: 'Pakaian' },
+  { id: '6', name: 'Jeans Slim Fit', price: 200000, image: 'https://picsum.photos/400/300?6', description: 'Nyaman & stylish', category: 'Pakaian', discountPercent: 20 },
+  { id: '7', name: 'Organic Snack Pack', price: 50000, image: 'https://picsum.photos/400/300?7', description: 'Camilan sehat', category: 'Makanan' },
+  { id: '8', name: 'Car Vacuum', price: 300000, image: 'https://picsum.photos/400/300?8', description: 'Bersihkan mobil dengan mudah', category: 'Otomotif' },
+  { id: '9', name: 'Bluetooth Speaker', price: 200000, image: 'https://picsum.photos/400/300?9', description: 'Suara powerful', category: 'Hiburan' },
+  { id: '10', name: 'Baby Stroller', price: 1200000, image: 'https://picsum.photos/400/300?10', description: 'Aman & nyaman untuk bayi', category: 'Perlengkapan Bayi', discountPercent: 5 },
+  { id: '11', name: 'Earbuds A', price: 120000, image: 'https://picsum.photos/400/300?11', description: 'Earbuds ringkas', category: 'Populer' },
+  { id: '12', name: 'Travel Mug', price: 80000, image: 'https://picsum.photos/400/300?12', description: 'Hangat lama', category: 'Terbaru' },
 ];
